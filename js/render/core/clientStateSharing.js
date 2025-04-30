@@ -30,7 +30,7 @@ window.clientState = {                                                          
                               clientData[id].left.fingers ? true : false,        // isXR(): is client immersive     //
    isXR  : id          => Array.isArray(clientState.head(id)),                   //                                 //
    pinch : (id,hand,i) => {                                                      // Pinch is when the thumb is      //
-      if (window.handtracking) {                                                 // touches by another finger, when //
+      if (clientState.isHand(id)) {                                              // touches by another finger, when //
          if (i < 1 || i > 6)                                                     // i has values 1,2,3,4.           //
             return false;                                                        // If the hand is pointing with    //
          if (i == 5 || i == 6) {                                                 // the thumb pointed to the sky,   //
