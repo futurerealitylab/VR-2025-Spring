@@ -51,6 +51,8 @@ export default () => {
             { name: "speech2"        , path: "./speech2.js"       , public: true  },
             { name: "speech3"        , path: "./speech3.js"       , public: true  },
 
+            { name: "drawHouse"      , path: "./drawHouse.js"     , public: true  },
+
             { name: "bouncing1"      , path: "./bouncing1.js"     , public: true  },
             { name: "bouncing2"      , path: "./bouncing2.js"     , public: true  },
             { name: "bouncing3"      , path: "./bouncing3.js"     , public: true  },
